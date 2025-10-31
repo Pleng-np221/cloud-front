@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Navbar from "../components/Narbar";
 import Path from "../components/Path";
 import bg1 from "../assets/img/bg1.png";

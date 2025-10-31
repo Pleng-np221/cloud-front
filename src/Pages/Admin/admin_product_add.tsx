@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import AdminSidebar from "./admin_sidebar";
 import AdminHeader from "./admin_header";
 import "./admin.css";

@@ -1,7 +1,4 @@
 import { useState, useEffect } from "react";
-import Narbar from "../../components/Narbar";
-import Filter from "../../components/Filter";
-import Path from "../../components/Path";
 
 import { Link } from "react-router-dom";
 import "./admin.css";

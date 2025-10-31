@@ -1,10 +1,5 @@
 
 import { useEffect, useState } from "react";
-import Narbar from './Narbar'
-import img1 from '../assets/img/img1-2.png'
-import bg1 from '../assets/img/bg1.png'
-import Path from './Path'
-
 
 import '../App.css'
 import { Link } from 'react-router-dom'

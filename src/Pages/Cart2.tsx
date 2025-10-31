@@ -3,7 +3,7 @@ import Strawberry from "../assets/img/Strawberry_Hug_Toast.jpg";
 
 export default function Cart() {
   // ตัวอย่างสินค้าในตะกร้า
-  const [cart, setCart] = useState([
+  const [cart, ] = useState([
     {
       id: 1,
       name: "Strawberry Hug Toast",

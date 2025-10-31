@@ -5,7 +5,6 @@ import bg1 from '../assets/img/bg1.png';
 import React, { useState, useEffect } from 'react';
 import axios from "axios";
 import { useUser } from "../contexts/UserContext";
-import type { User } from "../types";
 
 const API_URL = import.meta.env.VITE_API_URL;
 

@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import Narbar from '../components/Narbar'
 import img1 from '../assets/img/img1-2.png'
 import bg1 from '../assets/img/bg1.png'
-import Strawberry from '../assets/img/Strawberry_Hug_Toast.jpg'
 import Path from '../components/Path'
 
 

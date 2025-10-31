@@ -1,4 +1,3 @@
-import Path from '../components/Path'
 import Narbar from '../components/Narbar'
 import bg1 from '../assets/img/bg1.png'
 import logo from "../assets/img/logo-duckkey.png";

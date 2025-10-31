@@ -56,18 +56,18 @@ export default function LoginChangeAddress() {
     }
   };
 
-  const handleSetDefault = async () => {
-    try {
-      const res = await fetch(`${API_URL}/api/user/addresses/${id}/default`, {
-        method: "PUT",
-        credentials: "include",
-      });
-      if (!res.ok) throw new Error("Failed to set default");
-      setAddress({ ...address, is_default: true });
-    } catch (err) {
-      console.error(err);
-    }
-  };
+  // const handleSetDefault = async () => {
+  //   try {
+  //     const res = await fetch(`${API_URL}/api/user/addresses/${id}/default`, {
+  //       method: "PUT",
+  //       credentials: "include",
+  //     });
+  //     if (!res.ok) throw new Error("Failed to set default");
+  //     setAddress({ ...address, is_default: true });
+  //   } catch (err) {
+  //     console.error(err);
+  //   }
+  // };
 
   return (
     <div className='text-black'>
