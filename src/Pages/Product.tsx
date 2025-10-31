@@ -10,6 +10,7 @@ import type { Product } from "../types";
 import { useUser } from "../contexts/UserContext";
 
 const API_URL = import.meta.env.VITE_API_URL;
+const IMG_URL = import.meta.env.VITE_IMG_API_URL;
 
 export default function ProductPage() {
   const { id } = useParams<{ id: string }>();
@@ -67,7 +68,7 @@ export default function ProductPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 bg-white/90 p-10 rounded-xl">
           <div className="w-90">
             <img
-              src={`${import.meta.env.IMG_API_URL}${product.imgURL || ""}`}
+              src={`${IMG_URL}${product.imgURL || ""}`}
               alt={product.productName}
               className="rounded-lg shadow-lg"
             />
