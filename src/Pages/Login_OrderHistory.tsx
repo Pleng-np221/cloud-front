@@ -22,7 +22,6 @@ interface Order {
 }
 
 const API_URL = import.meta.env.VITE_API_URL;
-
 // function Tap() {
 //   return (
 //     <div className="flex gap-5 text-gray-600">
@@ -89,7 +88,7 @@ export default function OrderHistory() {
                             className="flex items-center gap-4 border-b pb-3 mb-3 last:border-none"
                             >
                             <img
-                                src={item.imgURL ? `${API_URL}${item.imgURL}` : noImg}
+                                src={item.imgURL ? `${import.meta.env.IMG_API_URL}${item.imgURL}` : noImg}
                                 className="w-24 h-24 object-cover rounded-lg border"
                             />
                             <div className="flex-1">

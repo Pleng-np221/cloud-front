@@ -125,7 +125,7 @@ export default function AdminOrderManage() {
                 <label className="block mb-1 font-medium">หลักฐานการโอน (transferSlip)</label>
                 {order.transferSlip ? (
                   <img
-                    src={`${API_URL}${order.transferSlip}`}
+                    src={`${import.meta.env.IMG_API_URL}${order.transferSlip}`}
                     alt="Transfer Slip"
                     className="mt-3 max-h-80 object-contain rounded-md border"
                   />

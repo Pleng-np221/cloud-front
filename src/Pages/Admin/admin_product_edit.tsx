@@ -229,7 +229,7 @@ export default function AdminProductEdit() {
                 />
                 {previewSrc && (
                   <img
-                    src={isLocalFile ? previewSrc : `${API_URL}${previewSrc}`}
+                    src={isLocalFile ? previewSrc : `${import.meta.env.IMG_API_URL}${previewSrc}`}
                     alt="Preview"
                     className="mt-3 max-h-64 object-contain rounded-md border"
                   />

@@ -87,7 +87,7 @@ export default function AdminProductList() {
                 >
                   <div className="p-6 flex">
                     <img className="w-32 h-32 object-cover rounded-md" 
-                      src={`${API_URL}${product.imgURL}` || noIMG}
+                      src={`${import.meta.env.IMG_API_URL}${product.imgURL}` || noIMG}
                       alt={product.productName}/>
                     <div className="ml-6 flex-1">
                       <h2 className="text-lg font-bold">{product.productName}</h2>
