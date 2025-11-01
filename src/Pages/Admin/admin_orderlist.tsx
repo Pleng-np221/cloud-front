@@ -4,7 +4,7 @@ import "./admin.css";
 import AdminOrderSidebar from "./admin_sidebar_order";
 import AdminHeader from "./admin_header";
 
-const API_URL = import.meta.env.VITE_API_URL;
+const API_URL = import.meta.env.VITE_API_URL || "";
 
 export default function AdminOrderList() {
   const [search, setSearch] = useState("");

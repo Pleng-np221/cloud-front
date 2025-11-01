@@ -9,7 +9,7 @@ interface Category {
   categoryName: string;
 }
 
-const API_URL = import.meta.env.VITE_API_URL;
+const API_URL = import.meta.env.VITE_API_URL || "";
 
 export default function AdminProductEdit() {
 
@@ -229,7 +229,7 @@ export default function AdminProductEdit() {
                 />
                 {previewSrc && (
                   <img
-                    src={isLocalFile ? previewSrc : `${import.meta.env.VITE_IMG_API_URL}${previewSrc}`}
+                    src={isLocalFile ? previewSrc : `${import.meta.env.VITE_IMG_API_URL || ""}${previewSrc}`}
                     alt="Preview"
                     className="mt-3 max-h-64 object-contain rounded-md border"
                   />

@@ -7,7 +7,7 @@ import { useCart } from "../hooks/useCart";
 import type { CartItem } from "../types";
 import noImg from "../assets/img/no-img-rec.png";
 
-const API_URL = import.meta.env.VITE_API_URL;
+const API_URL = import.meta.env.VITE_API_URL || "";
 
 export default function CartPage() {
   const { cart, total, updatequantities, removeFromCart } = useCart();

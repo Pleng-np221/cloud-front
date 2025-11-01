@@ -5,7 +5,7 @@ import DuckBig from "../assets/img/duck-big.png";
 import { useState } from "react"; 
 import axios from "axios";
 
-const API_URL = import.meta.env.VITE_API_URL;
+const API_URL = import.meta.env. || "";
 
 export default function Signup(){
     // 1. จัดการ State สำหรับช่องกรอกข้อมูล (ตามรูปภาพ Sign Up)

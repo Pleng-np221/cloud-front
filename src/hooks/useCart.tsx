@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import type { CartItem, CustomProductInput } from "../types";
 import { useUser } from "../contexts/UserContext";
 
-const API_URL = import.meta.env.VITE_API_URL;
+const API_URL = import.meta.env.VITE_API_URL || "";
 
 export function useCart() {
   const [cart, setCart] = useState<CartItem[]>([]);

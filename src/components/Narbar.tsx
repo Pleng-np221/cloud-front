@@ -13,7 +13,7 @@ export default function Navbar() {
   const [isAdmin, setIsAdmin] = useState(false);
 
   useEffect(() => {
-    fetch(`${import.meta.env.VITE_API_URL}/api/check-admin`, {
+    fetch(`${import.meta.env.VITE_API_URL || ""}/api/check-admin`, {
       credentials: "include"
     })
       .then(res => res.json())
@@ -30,7 +30,7 @@ export default function Navbar() {
     }
 
     const controller = new AbortController(); // cancel previous request
-    fetch(`${import.meta.env.VITE_API_URL}/api/products/search/${searchQuery}`, { signal: controller.signal })
+    fetch(`${import.meta.env.VITE_API_URL || ""}/api/products/search/${searchQuery}`, { signal: controller.signal })
       .then((res) => res.json())
       .then((data) => setSearchResults(data))
       .catch((err) => {
@@ -178,7 +178,7 @@ export default function Navbar() {
                     className="p-2 hover:bg-amber-100 rounded cursor-pointer"
                     onClick={async () => {
                       try {
-                        await fetch(`${import.meta.env.VITE_API_URL}/api/logout`, {
+                        await fetch(`${import.meta.env.VITE_API_URL || ""}/api/logout`, {
                           method: "POST",
                           credentials: "include",
                         });

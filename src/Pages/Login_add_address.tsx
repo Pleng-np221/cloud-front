@@ -5,7 +5,7 @@ import bg1 from '../assets/img/bg1.png';
 import { useEffect, useState } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
 
-const API_URL = import.meta.env.VITE_API_URL;
+const API_URL = import.meta.env.VITE_API_URL || "";
 
 interface Address {
   id: number;

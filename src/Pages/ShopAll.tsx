@@ -9,7 +9,7 @@ import { Link, useLocation } from "react-router-dom";
 
 import type { Product, Category } from "../types";
 
-const API_URL = import.meta.env.VITE_API_URL;
+const API_URL = import.meta.env.VITE_API_URL || "";
 // fetch(`${API_URL}/api/products/`)
 
 export default function Shop() {
@@ -94,7 +94,7 @@ export default function Shop() {
               >
                 <img
                   className="mx-auto w-60 object-cover"
-                  src={`${import.meta.env.VITE_IMG_API_URL}${product.imgURL}` || noIMG}
+                  src={`${import.meta.env.VITE_IMG_API_URL || ""}${product.imgURL}` || noIMG}
                   alt={product.productName}
                 />
                 <h2 className="text-black m-5 text-xl text-center">{product.productName}</h2>

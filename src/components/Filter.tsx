@@ -6,7 +6,7 @@ interface Category {
   categoryName: string;
 }
 
-const API_URL = import.meta.env.VITE_API_URL;
+const API_URL = import.meta.env.VITE_API_URL || "";
 
 const CollapsibleFilter = () => {
   const [open, setOpen] = useState(false);

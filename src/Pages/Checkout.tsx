@@ -9,7 +9,7 @@ import type { CartItem } from "../types";
 
 import { useUser } from "../contexts/UserContext";
 
-const API_URL = import.meta.env.VITE_API_URL;
+const API_URL = import.meta.env.VITE_API_URL || "";
 
 interface Address {
   id: number;

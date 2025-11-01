@@ -16,7 +16,7 @@ interface Category {
 
 import type { Product } from "../types";
 
-const API_URL = import.meta.env.VITE_API_URL;
+const API_URL = import.meta.env.VITE_API_URL || "";
 // fetch(`${API_URL}/api/products/`)
 
 export default function App() {

@@ -9,8 +9,8 @@ import RandomProds from "../components/randomProds";
 import type { Product } from "../types";
 import { useUser } from "../contexts/UserContext";
 
-const API_URL = import.meta.env.VITE_API_URL;
-const IMG_URL = import.meta.env.VITE_IMG_API_URL;
+const API_URL = import.meta.env.VITE_API_URL || "";
+const IMG_URL = import.meta.env.VITE_IMG_API_URL || "";
 
 export default function ProductPage() {
   const { id } = useParams<{ id: string }>();
