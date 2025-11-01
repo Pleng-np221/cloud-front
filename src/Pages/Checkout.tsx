@@ -68,9 +68,9 @@ export default function Checkout() {
       .catch((err) => console.error("Error fetching addresses:", err));
   }, []);
 
-  const handleAddressChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setSelectedAddressId(Number(e.target.value));
-  };
+  // const handleAddressChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  //   setSelectedAddressId(Number(e.target.value));
+  // };
 
   const handleManualChange = (field: keyof Address, value: string) => {
     setManualAddress((prev) => ({ ...prev, [field]: value }));
